@@ -1,7 +1,16 @@
-<script lang="ts" setup>
-console.log("ewq");
-</script>
+<script lang="ts" setup></script>
 
 <template>
-  <div>hello</div>
+  <section class="grid" style="min-height: 100vh">
+    <aside>Sidebar</aside>
+    <div>
+      <slot />
+    </div>
+  </section>
 </template>
+
+<style scoped>
+grid {
+  display: grid;
+}
+</style>
